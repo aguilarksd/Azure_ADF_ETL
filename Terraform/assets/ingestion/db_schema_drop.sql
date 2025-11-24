@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS source.orders;
+DROP SCHEMA IF EXISTS source;

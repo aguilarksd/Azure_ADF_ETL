@@ -1,6 +1,3 @@
-
-CREATE SCHEMA source; 
-
 CREATE TABLE source.Orders (
     order_id INT PRIMARY KEY,
     customer_name VARCHAR(100),
@@ -10,6 +7,7 @@ CREATE TABLE source.Orders (
     order_date DATETIME,
     last_updated DATETIME DEFAULT GETDATE()
 );
+
 
 -- INITIAL
 INSERT INTO source.Orders (order_id, customer_name, product_name, quantity, price, order_date, last_updated)
